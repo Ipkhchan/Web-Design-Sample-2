@@ -1,0 +1,732 @@
+/*Infrastructure*/
+[class *="row"] {
+    display: flex;
+    margin: auto;
+    padding: 20px 10vw;
+}
+
+[class *="row"]::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+* {
+    box-sizing: border-box;
+/*    border-style: solid;*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+.col-plan {width: 30%;}
+
+.p1 {
+    font-size: 55%;
+}
+
+.p2 {
+    font-size: 50%;
+}
+
+.p3 {
+    font-size: 100%;
+}
+
+.p4 {
+    font-size: 60%
+}
+
+.p5 {
+    font-size: 40%;
+}
+
+h2 {
+    font-size: 130%;
+}
+
+h4 {
+    font-size: 70%;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Sticky*/
+.go-up {
+    display: none;
+    position: sticky;
+    left: 99%;
+    top: 90%;
+    width: 40px;
+    height: 40px;
+}
+
+.go-up svg {
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+.go-up svg:hover {
+    height: 40px;
+    width: auto;
+}
+
+.go-down {
+    position: sticky;
+    left: 99%;
+    top: 95%;
+    width: 40px;
+    height: 40px;
+}
+
+.go-down svg {
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+
+.go-down svg:hover{
+    height: 40px;
+    width: auto;
+}
+
+.cart {
+    position: sticky;
+    top: 80%;
+    left: 99%;
+    width: 40px;
+    height: 40px;
+}
+
+.cart svg {
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 30px;
+}
+
+.cart svg:hover {
+    height: 40px;
+    width: 40px;
+}
+
+.cartItem {
+/*    display: none;*/
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 20px;
+    width: 20px;
+    background-color: green;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+/*Row 1*/
+.row-1 {
+    margin-bottom: 50px;
+}
+
+.row-1 img {
+    height: 40px;
+}
+
+/*Navigation Bar*/
+.topnav li {
+    display: inline;
+    float: right;
+    padding: 0 0 0 10px;
+    font-weight: bold; 
+    font-size: 80%;
+    list-style: none;
+}
+
+.topnav a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+    
+}
+
+.row-1 .menu-icon {
+    display: none;
+}
+
+/*Row 2*/
+.title {
+    font-size: 250%;
+    font-weight: bold;
+    margin: -5px 0 5px 0;
+    
+}
+
+.number {
+    float: right;
+    font-size: 100px;
+    color: grey;
+    margin: -20px 0 0 0;
+    font-weight: bold;
+}
+
+/*Row 3*/
+.row-3 {
+    height: 21vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.top-image {
+    width: 65%;
+    float: right;
+    height: 20vw;
+    background: url(assets/olu-eletu-27968.jpg) 0px;
+    background-size: 100%;
+}
+
+/*Row-4*/
+.row-4 a{
+    text-decoration: none;
+    color: black;
+    font-size: 60%;
+    font-weight: bold;
+    border-bottom: 3px solid;
+    
+}
+
+.row-4 a:hover {
+    background-color: black;
+    color: white;
+}
+
+.prev {
+    float: left;
+    padding: 0 40px 5px 0;
+}
+
+.next {
+    float: right;
+    padding: 0 0 5px 40px;
+}
+
+/*Row 5*/
+.row-5 .p1, .row-5 h2{
+    font-weight: bold;
+    margin: 0px;
+}
+
+/*Row 6 + 7*/
+.row-6 img, .row-7 img {
+    margin: 5px 0 0 0;
+    height: 15px;
+}
+
+.blurb {
+    float: right;
+}
+
+.row-6 h4, .row-7 h4 {
+    margin: 0 0 15px 0;
+}
+
+/*Row 8*/
+.row-8 {
+    justify-content: center;
+}
+
+.row-8 .col-6 * {
+    text-align: center;
+}
+
+.row-8 p {
+    margin: 0;
+}
+
+.row-8 h2 {
+    margin: 0 0 5px 0;
+}
+
+/*Row 9+10+11+12*/
+.row-8, .row-9, .row-10, .row-11, .row-12 {
+    background-color: lightgrey;
+}
+
+.row-10, .row-12 {
+    flex-direction: row-reverse;
+}
+
+.row-10 .col-6 .flex, .row-12 .col-6 .flex {
+    flex-direction: row-reverse;
+}
+
+.row-9 img, .row-10 img, .row-11 img, .row-12 img {
+    width: 100%;
+}
+
+.row-9 .col-6, .row-10 .col-6,.row-11 .col-6, .row-12 .col-6 {
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.row-9 .image, .row-10 .image,.row-11 .image, .row-12 .image {
+    height: 20vw;
+    overflow: hidden;
+}
+
+.row-9 .left, .row-10 .left,.row-11 .left, .row-12 .left {
+    margin: 0 20px 0 0;
+}
+
+.row-9 .right,.row-10 .right,.row-11 .right, .row-12 .right {
+    margin: 0 0 0 20px;
+}
+
+.row-9 .p3, .row-11 .p3 {
+    float: right;
+    margin: 0; 
+    font-weight: bold;
+}
+
+.row-10 .p3, .row-12 .p3 {
+    float: left;
+    margin: 0; 
+    font-weight: bold;
+}
+
+.row-9 h4, .row-9 .p2 {
+    float: left;
+    clear: both;
+    margin: 0 0 5px 0;
+}
+
+.row-9 .p2, .row-11 .p2 {
+    float: left;
+}
+
+.row-10 h4, .row-10 .p2 {
+    float: right;
+    clear: both;
+    margin: 0 0 5px 0;
+}
+
+.row-11 h4, .row-11 .p2 {
+    float: left;
+    clear: both;
+    margin: 0 0 5px 0;
+}
+
+.row-12 h4, .row-12 .p2 {
+    float: right;
+    clear: both;
+    margin: 0 0 5px 0;
+}
+
+.row-9 .p1, .row-11 .p1 {
+    text-align: left;
+}
+
+.row-10 .p1, .row-12 .p1 {
+    text-align: right;
+}
+
+.row-12 {
+    margin-bottom: 30px;
+}
+
+/*Row 13*/
+.row-13 h2, .row-13 p, .row-13 a {
+    text-align: center;
+    align-self: center;
+}
+
+.row-13 h2 {
+    margin: 0;
+}
+
+.row-13 a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 55%;
+    padding: 10px 20px;
+}
+
+.row-13 {
+    margin-bottom: 50px;
+}
+
+.row-13 {
+    flex-direction: column
+}
+
+/*Row 14*/
+.row-14 {
+    background-color: lightgrey;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.row-14::after {
+    content: none;
+}
+
+.row-14 .col-plan {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.plan-content {
+    padding: 0 15%;
+}
+
+.plan-content, .plan-bottom {
+    flex-direction: column;
+}
+
+.plan-title {
+    float: left;
+    text-align: left; 
+    font-weight: bold;
+    margin: 10px 0 10px;
+}
+
+.plan-features * {
+    margin: 0;
+}
+
+.numba {
+    font-size: 300%;
+    padding: 0 3px;
+}
+
+.dollar {
+    padding: 10px 0 0 0;
+    
+}
+
+.month {
+    padding: 35px 0 0 0;
+}
+
+.line {
+    height: 10px;
+    border-bottom: 3px solid;
+    border-color: lightgrey;
+    margin: 0 0 10px 0;
+}
+
+.plan-select {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 70%;
+    align-self: center;
+    padding: 10px 0;
+}
+
+.disclaimer {
+    text-align: center;
+    color: lightgrey;
+}
+
+.plan-1, .plan-3 {
+    background-color: white;
+    
+}
+
+.plan-1 a, .plan-3 a{
+    background-color: black;
+}
+
+.plan-2 {
+    background-color: black;
+    color: white;
+}
+
+.plan-2 a {
+    background-color: white;
+    color: black;
+}
+
+.sticker {
+    position: absolute;
+    left: 70%;
+    bottom: 87%;
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 17px 12px;
+    border-radius: 50%;
+    border-style: none;
+}
+
+.relative {
+    position: relative;
+}
+
+/*Row 15*/
+.row-15 img {
+    height: 30px;
+}
+
+.row-15 p {
+    margin: 0 0 30px 0;
+    line-height: 14px;
+}
+
+.row-15 a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+/*Row 16*/
+.row-16 {
+    background-color: black;
+}
+
+.row-16 * {
+    color: white;
+}
+
+.white-logo {
+    height: 20px;
+    margin: 0 5px 0 0;
+}
+
+.row-16 h4 {
+    margin: 0;
+}
+
+.row-16 .flex-column {
+    justify-content: space-between;
+}
+
+.social-media *{
+   height: 10px;
+   margin: 0 20px 0 0; 
+}
+
+.row-16 a{
+    text-decoration: none;
+}
+
+.bottom-nav-titles {
+    color: darkgrey;
+    margin: 0 0 8px 0;
+}
+
+.bottom-nav-content a{
+    margin: 0 0 5px 0;
+}
+
+.bottom-nav-content a:hover {
+    color: black;
+    background-color: white;
+}
+
+.subscribe {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 17px;
+}
+
+input[type="text"] {
+    width: 100%;
+    background-color: black;
+    padding: 4px 0 4px 6px;
+    margin: 0 0 10px 0;
+    border: 2px solid;
+}
+
+input[type="submit"] {
+    color: black;
+    background-color: white;
+    padding: 2px 10px;
+}
+
+/*Responsive Design (Media Queries)*/
+@media screen and (min-width: 800px) {
+    [class *="row"] {
+       padding: 40px 15vw;  
+    }
+    
+/*    font sizes*/
+    .p1 {
+        font-size: 75%;
+    }
+
+    .p2 {
+        font-size: 70%;
+    }
+
+    .p3 {
+        font-size: 120%;
+    }
+
+    .p4 {
+        font-size: 80%
+    }
+
+    .p5 {
+        font-size: 60%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    h4 {
+        font-size: 90%;
+    }
+    
+/*    Row 6+7*/
+    .row-6 img, .row-7 img {
+    margin: 0 0 0 20px;
+    height: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .p5 {
+        font-size: 60%;
+    }
+    
+    
+    .row-2, .row-5, .row-6, .row-7, .row-9, .row-10, .row-11, .row-12, .row-14, .row-15, .row-16 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .row-2 .number {
+        float: none;
+    }
+    
+    .row-6 > div, .row-7 > div, .row-5 > * , .row-16 > *{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+
+    }
+    
+    .row-6, .row-7 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    
+    .row-2 > * {
+        width: 100%;
+    }
+    
+    .row-8 > div, .row-9 > div, .row-10 > div, .row-11 > div, .row-12 > div {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .body .right, .body .left {
+        margin: 0px;
+    }
+    
+    .row-9 .image, .row-10 .image, .row-11 .image, .row-12 .image {
+        height: 100%;
+        width: auto;
+        
+    }
+    
+    .row-9 img < * {
+        height: 50px;
+    }
+    
+    .row-14 > div {
+        width: 80%;
+        margin: 0 0 20px 0;
+        
+    }
+    
+    .row-14 .plan-features {
+        justify-content: center;
+    }
+    
+    .row-16 > div {
+        margin-bottom: 20px;
+    }
+    
+    input[type="text"] {
+        text-align: center;
+    }
+    
+    .social-media {
+        justify-content: space-around;
+    }
+    
+    .social-media > * {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .topnav li {
+        display: none;  
+        width: 100%;
+        clear: both;
+        padding: 5px 0 5px 0;
+    }
+    
+    .topnav li a {
+        float: right;
+    }
+    
+   .row-1 .menu-icon {
+        display: block;
+        float: right;
+        padding-top: 10px;
+        color: black;
+        text-decoration: none;
+        
+    }
+    
+    .row-1 .menu-icon {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 561px) {
+    .topnav li {
+        display: inline !important;
+    }
+    
+
+
+
+
+
+
