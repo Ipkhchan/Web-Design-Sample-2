@@ -68,80 +68,6 @@ h4 {
     flex-direction: column;
 }
 
-/*Sticky*/
-.go-up {
-    display: none;
-    position: sticky;
-    left: 99%;
-    top: 90%;
-    width: 40px;
-    height: 40px;
-}
-
-.go-up svg {
-    height: 30px;
-    display: block;
-    margin: auto;
-}
-
-.go-up svg:hover {
-    height: 40px;
-    width: auto;
-}
-
-.go-down {
-    position: sticky;
-    left: 99%;
-    top: 95%;
-    width: 40px;
-    height: 40px;
-}
-
-.go-down svg {
-    height: 30px;
-    display: block;
-    margin: auto;
-}
-
-.go-down svg:hover{
-    height: 40px;
-    width: auto;
-}
-
-.cart {
-    position: sticky;
-    top: 80%;
-    left: 99%;
-    width: 40px;
-    height: 40px;
-}
-
-.cart svg {
-    display: block;
-    margin: auto;
-    height: 30px;
-    width: 30px;
-}
-
-.cart svg:hover {
-    height: 40px;
-    width: 40px;
-}
-
-.cartItem {
-/*    display: none;*/
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    height: 20px;
-    width: 20px;
-    background-color: green;
-    border-radius: 50%;
-    text-align: center;
-    font-weight: bold;
-}
-
-
 /*Row 1*/
 .row-1 {
     margin-bottom: 50px;
@@ -156,7 +82,7 @@ h4 {
     display: inline;
     float: right;
     padding: 0 0 0 10px;
-    font-weight: bold; 
+    font-weight: bold;
     font-size: 80%;
     list-style: none;
 }
@@ -164,13 +90,13 @@ h4 {
 .topnav a {
     text-decoration: none;
     color: black;
-    
+
 }
 
 .topnav a:hover {
     background-color: black;
     color: white;
-    
+
 }
 
 .row-1 .menu-icon {
@@ -182,7 +108,7 @@ h4 {
     font-size: 250%;
     font-weight: bold;
     margin: -5px 0 5px 0;
-    
+
 }
 
 .number {
@@ -215,7 +141,7 @@ h4 {
     font-size: 60%;
     font-weight: bold;
     border-bottom: 3px solid;
-    
+
 }
 
 .row-4 a:hover {
@@ -307,13 +233,13 @@ h4 {
 
 .row-9 .p3, .row-11 .p3 {
     float: right;
-    margin: 0; 
+    margin: 0;
     font-weight: bold;
 }
 
 .row-10 .p3, .row-12 .p3 {
     float: left;
-    margin: 0; 
+    margin: 0;
     font-weight: bold;
 }
 
@@ -409,7 +335,7 @@ h4 {
 
 .plan-title {
     float: left;
-    text-align: left; 
+    text-align: left;
     font-weight: bold;
     margin: 10px 0 10px;
 }
@@ -425,7 +351,7 @@ h4 {
 
 .dollar {
     padding: 10px 0 0 0;
-    
+
 }
 
 .month {
@@ -456,7 +382,7 @@ h4 {
 
 .plan-1, .plan-3 {
     background-color: white;
-    
+
 }
 
 .plan-1 a, .plan-3 a{
@@ -530,7 +456,7 @@ h4 {
 
 .social-media *{
    height: 10px;
-   margin: 0 20px 0 0; 
+   margin: 0 20px 0 0;
 }
 
 .row-16 a{
@@ -575,9 +501,9 @@ input[type="submit"] {
 /*Responsive Design (Media Queries)*/
 @media screen and (min-width: 800px) {
     [class *="row"] {
-       padding: 40px 15vw;  
+       padding: 40px 15vw;
     }
-    
+
 /*    font sizes*/
     .p1 {
         font-size: 75%;
@@ -606,7 +532,7 @@ input[type="submit"] {
     h4 {
         font-size: 90%;
     }
-    
+
 /*    Row 6+7*/
     .row-6 img, .row-7 img {
     margin: 0 0 0 20px;
@@ -615,79 +541,79 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 500px) {
-    
+
     .p5 {
         font-size: 60%;
     }
-    
-    
+
+
     .row-2, .row-5, .row-6, .row-7, .row-9, .row-10, .row-11, .row-12, .row-14, .row-15, .row-16 {
         flex-direction: column;
         align-items: center;
         text-align: center;
     }
-    
+
     .row-2 .number {
         float: none;
     }
-    
+
     .row-6 > div, .row-7 > div, .row-5 > * , .row-16 > *{
         flex-direction: column;
         width: 100%;
         align-items: center;
 
     }
-    
+
     .row-6, .row-7 {
         padding-top: 0px;
         padding-bottom: 0px;
     }
-    
+
     .row-2 > * {
         width: 100%;
     }
-    
+
     .row-8 > div, .row-9 > div, .row-10 > div, .row-11 > div, .row-12 > div {
         width: 100%;
         margin: 0px;
     }
-    
+
     .body .right, .body .left {
         margin: 0px;
     }
-    
+
     .row-9 .image, .row-10 .image, .row-11 .image, .row-12 .image {
         height: 100%;
         width: auto;
-        
+
     }
-    
+
     .row-9 img < * {
         height: 50px;
     }
-    
+
     .row-14 > div {
         width: 80%;
         margin: 0 0 20px 0;
-        
+
     }
-    
+
     .row-14 .plan-features {
         justify-content: center;
     }
-    
+
     .row-16 > div {
         margin-bottom: 20px;
     }
-    
+
     input[type="text"] {
         text-align: center;
     }
-    
+
     .social-media {
         justify-content: space-around;
     }
-    
+
     .social-media > * {
         margin: 10px;
     }
@@ -695,25 +621,25 @@ input[type="submit"] {
 
 @media screen and (max-width: 560px) {
     .topnav li {
-        display: none;  
+        display: none;
         width: 100%;
         clear: both;
         padding: 5px 0 5px 0;
     }
-    
+
     .topnav li a {
         float: right;
     }
-    
+
    .row-1 .menu-icon {
         display: block;
         float: right;
         padding-top: 10px;
         color: black;
         text-decoration: none;
-        
+
     }
-    
+
     .row-1 .menu-icon {
         font-size: 25px;
     }
@@ -723,10 +649,3 @@ input[type="submit"] {
     .topnav li {
         display: inline !important;
     }
-    
-
-
-
-
-
-
